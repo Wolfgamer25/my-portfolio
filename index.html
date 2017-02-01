@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app='Portfolio'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Permanent+Marker" rel="stylesheet">
+
+    <!--compiled and minified Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js'></script>
+    <script src='app.js'></script>
+    <script src="controller.js"></script>
+    <script src='routes.js'> </script>
+    <script src="https://use.fontawesome.com/3ac9a2c5e2.js"></script>
+
+
+</head>
+
+<body ng-controller='PortfolioCtrl'>
+    <div class="intro" id='1st'>
+        <div class='name'>
+            <h1>{{intro.name}}</h1>
+            <h5>{{intro.subheading}}</h5>
+            <img src="{{intro.logo}}" />
+            <br />
+            <a href="#2nd"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+        </div>
+
+
+    </div>
+    <div class='about-me' id='2nd'>
+<div id='me'>
+  <h3>{{about.heading}}</h3>
+
+  <div class="row">
+  <div class="col l9">
+    <p>
+      {{about.bio}}
+    </p>
+  </div>
+  <div class="col l3">
+    <img src="{{about.picture}}"/>
+  </div>
+</div>
+
+</div>
+<hr />
+        <div class='about'>
+            <div class="row classes">
+                <div class="col l4 s12" id='freecode'>
+                    <div id='free-logo'>
+                        <i class='{{about.programs.freecodeCamp.logo}}'></i>
+                        <br />
+                        <h5>
+         {{about.programs.freecodeCamp.title}}
+       </h5>
+                        <h6>
+         {{about.programs.freecodeCamp.subheading}}
+         </h6>
+                    </div>
+                    <p>
+                        {{about.programs.freecodeCamp.bio1}}
+                    </p>
+                </div>
+                <div class="col l4 s12" id='general'>
+                    <img src="{{about.programs.generalAssembly.logo}}" />
+                    <br />
+                    <h5>{{about.programs.generalAssembly.title}}</h5>
+                    <h6>{{about.programs.generalAssembly.subheading}}</h6>
+                    <p>
+                        {{about.programs.generalAssembly.bio}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video coming soon
+    <div class='video' id='3rd'>
+      <div id='video'>
+        <h1>{{video.title}}</h1>
+      </div>
+    </div> -->
+    <div  id='projects' ng-view>
+      </div>
+      <div id='contact'>
+        <div class="inline">
+          <h1>{{contact.heading}}</h1>
+          <h2>Email:</h2><h3>
+            {{contact.email}}
+          </h3>
+          <h2>Phone:</h2>
+          <h3>
+            {{contact.phone}}
+          </h3>
+          <a href="{{contact.github}}"><i class="{{contact.icons.github}}"></i></a>
+          <a href="{{contact.linkedin}}"><i class="{{contact.icons.linkedin}}"></i></a>
+          </div>
+      </div>
+
+</body>
+
+</html>

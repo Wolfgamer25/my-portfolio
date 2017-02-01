@@ -1,0 +1,35 @@
+<div id='myprojects'>
+
+  <div class="col l12">
+    <div class="col l8 ">
+      <img src="{{cur.picture}}" />
+    </div>
+    <div class="col l4" id="text">
+      <h1>{{cur.heading}}</h1>
+      <h5>Languages and Libaries <br />
+        {{cur.languages}}</h5>
+        <p>
+          <span class="strong">description</span><br />
+          {{cur.description}}
+        </p>
+    </div>
+
+  </div>
+  <div id='link'>
+    <p>
+      Website: <a href="{{cur.website}}">{{cur.website}}</a>
+    </p>
+    <p>
+      GitHub: <a href="{{cur.github}}">{{cur.github}}</a>
+    </p>
+  </div>
+
+  <div ng-show='number > 0' id='left'>
+    <a href="#!/projects/{{number}}"><i class='{{project.intro.left}}' ng-click ='decrease()'></i>
+  </div>
+  <div ng-hide='number >= leng' id='right'>
+    <a href="#!/projects/{{number}}"><i class='{{project.intro.right}}' ng-click ='increase()'></i>
+    </a>
+  </div>
+
+</div>

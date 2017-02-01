@@ -1,0 +1,188 @@
+body{
+  color:white;
+  font-family: 'Bahiana', cursive;
+  font-family: 'Permanent Marker', cursive;
+}
+.name{
+display: inline-block;
+  margin-top:100px;
+  opacity: 9;
+  color: white;
+
+}
+
+.intro{
+background-image: url('pictures/AtlantaBG2015.jpg');
+height:100vh;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+background-attachment: fixed;
+opacity: 1;
+
+}
+.about-me{
+height:100vh;
+background-color:   rgb(84, 84, 84);
+}
+.name i{
+  margin-top: 150px;
+  color: white;
+}
+.video{
+  height:100vh;
+  background-color: rgb(119, 116, 116);
+  text-align: center;
+  color: black;
+
+}
+.project{
+  height:100vh;
+background-image: url('pictures/ZUDiq3.jpg');
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+text-align: center;
+
+}
+#myprojects{
+  height:100vh;
+  color: black;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: rgb(196, 194, 194);
+
+}
+#myprojects img{
+  width: 800px;
+  margin-top: 110px;
+  float: left;
+  margin-left: 50px;
+
+}
+#myprojects a{
+  color:white;
+}
+#contact{
+  height:100vh;
+  background-color:rgb(229, 222, 222);
+}
+
+.about{
+  opacity: 9;
+  color: white;
+  display: inline-block;
+
+}
+.about i{
+font-size: 100px;
+color: green;
+}
+.about img{
+  width:100px;
+}
+#me{
+  display: inline-block;
+  margin-top: 60px;
+}
+#me img{
+  width: 130px;
+  /*float: left;*/
+  /*margin-left: 950px;*/
+  border-radius: 50%;
+  margin-left: 60px;
+}
+#me h3{
+  margin-left: 30px;
+  margin-top: -30px;
+}
+#me p{
+float: left;
+margin-top: 10px;
+margin-left: 70px;
+}
+
+
+.classes{
+  margin-left: 200px;
+  margin-top: 30px;
+}
+#general{
+  margin-left: 150px;
+}
+#general p{
+ margin-left: -90px;
+}
+#general img{
+  margin-left: 40px;
+}
+#freecode{
+  margin-left: 50px;
+}
+#freecode i{
+  margin-left: 45px;
+}
+#freecode h5{
+  margin-left: 25px;
+}
+#freecode h6{
+  margin-left: 40px;
+}
+#freecode p{
+  margin-left: -90px;
+}
+#video{
+  display: inline-block;
+}
+#projectIntro{
+  display: inline-block;
+}
+.inline{
+  display: inline-block;
+}
+#text{
+  float: right;
+  margin-left: 900px;
+  margin-top: -450px;
+  text-align: center;
+}
+#text p{
+  margin-right: 30px;
+}
+#text h1{
+  margin-left: -30px;
+}
+#projectIntro{
+  margin-top: 200px;
+  color: black;
+
+}
+#projectIntro i{
+  font-size: 40px;
+  color: white;
+  margin-left: 950px;
+  margin-top: -600px;
+}
+#link{
+  margin-left: 50px;
+  margin-top: -90px;
+
+}
+#right{
+  margin-left: 855px;
+  margin-top: -350px;
+}
+#left{
+  margin-left: -510px;
+  margin-top: -350px;
+}
+#contact{
+  text-align: center;
+  color: black;
+}
+#contact i{
+font-size: 100px;
+margin-left: 100px;
+margin-right: 100px;
+color: black;
+}
